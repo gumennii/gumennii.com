@@ -1,0 +1,10 @@
+{
+  "name": "gumennii",
+  "version": "1.0.0",
+  "description": "Personal website for Mihail Gumennii",
+  "main": "index.js",
+  "repository": "https://github.com/gumennii/gumennii",
+  "author": "Mihail Gumennii",
+  "license": "MIT",
+  "dependencies": {}
+}
