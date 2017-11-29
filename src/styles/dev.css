@@ -1,0 +1,32 @@
+/* Imports */
+
+/* Settings */
+
+/* Objects */
+
+.o-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  height: 100%;
+}
+
+.o-page__bar {
+    width: 64px;
+    margin: 0;
+    background-color: #fff;
+  }
+
+.o-page__content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }

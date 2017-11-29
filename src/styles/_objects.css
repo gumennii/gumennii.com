@@ -1,0 +1,19 @@
+/* Objects */
+
+.o-page {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  align-content: stretch;
+  height: 100%;
+
+  &__bar {
+    width: 64px;
+    margin: 0;
+    background-color: var(--color-bg-primary);
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}

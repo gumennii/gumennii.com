@@ -1,0 +1,15 @@
+/* Base styles */
+
+html {
+  height: 100%;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--color-bg-secondary);
+  font-family: var(--font-primary);
+}
