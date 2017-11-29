@@ -6,7 +6,10 @@ module.exports = () => ({
         "max-empty-lines": 2
       }
     },
-    'postcss-cssnext': {},
-    'cssnano': {}
+    'precss': {},
+    'postcss-cssnext': {}
+    // 'cssnano': {
+    //   autoprefixer: false
+    // }
   }
 });
