@@ -2,6 +2,22 @@
 
 /* Settings */
 
+/* Base styles */
+
+html {
+  height: 100%;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: 'PT Serif', Arial, serif;
+}
+
 /* Objects */
 
 .o-page {
@@ -22,6 +38,7 @@
 .o-page__bar {
     width: 64px;
     margin: 0;
+    padding: 4% 0;
     background-color: #fff;
   }
 
@@ -30,3 +47,26 @@
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
+
+/* Components */
+
+.c-page-label {
+  position: fixed;
+  left: -18px;
+  bottom: 72px;
+  color: #045afa;
+  font-size: 11px;
+  font-size: .6875rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.c-hamburger {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}

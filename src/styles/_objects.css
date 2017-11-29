@@ -10,6 +10,7 @@
   &__bar {
     width: 64px;
     margin: 0;
+    padding: 4% 0;
     background-color: var(--color-bg-primary);
   }
 
