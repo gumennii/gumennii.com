@@ -6,15 +6,31 @@
   justify-content: flex-start;
   align-content: stretch;
   height: 100%;
+}
 
-  &__bar {
-    width: 64px;
-    margin: 0;
-    padding: 4% 0;
-    background-color: var(--color-bg-primary);
-  }
+.o-bar {
+  min-width: 64px;
+  margin: 0;
+  padding: 32px 0;
+  background-color: var(--color-bg-primary);
+}
 
-  &__content {
-    flex-grow: 1;
-  }
+.o-main {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-aside {
+  overflow: hidden;
+}
+
+
+.o-box {
+  margin: 10%;
+}
+
+.o-content {
+
 }

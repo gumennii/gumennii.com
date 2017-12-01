@@ -1,0 +1,5 @@
+/* Utilities and Helpers */
+
+.u-silent {
+  color: var(--color-text-secondary);
+}
