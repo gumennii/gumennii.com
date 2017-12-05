@@ -1,7 +1,8 @@
 /* Objects */
 
 .o-page {
-  display: flex;
+  display: grid;
+  grid-template-columns: 64px auto auto;
   align-items: stretch;
   justify-content: flex-start;
   align-content: stretch;
@@ -17,15 +18,23 @@
 
 .o-main {
   display: flex;
-  width: 75%;
+  min-width: 320px;
   align-items: center;
   justify-content: center;
 }
 
 .o-aside {
+  @media only screen and (max-width: 960px) {
+    display: none;
+  }
   overflow: hidden;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
+.o-intro {
+  padding: 10%;
+}
 
 .o-box {
   margin: 10%;
