@@ -60,12 +60,14 @@
 }
 
 .c-media {
+  position: relative;
   height: 100%;
   width: 100%;
   display: block;
   object-fit: cover;
   &__image {
-    //min-width: 100%;
+    position: relative;
+    z-index: 1;
     min-height: 100%;
   }
 }

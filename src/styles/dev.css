@@ -85,6 +85,21 @@ a {
           align-items: center;
 }
 
+.o-aside {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 960px) {
 
   .o-aside {
@@ -92,10 +107,17 @@ a {
   }
 }
 
-.o-aside {
-  overflow: hidden;
-  margin-top: 32px;
-  margin-bottom: 32px;
+.o-aside__media {
+    overflow: hidden;
+}
+
+.o-aside__frame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-color: #045afa;
 }
 
 .o-intro {
@@ -272,6 +294,7 @@ a {
 }
 
 .c-media {
+  position: relative;
   height: 100%;
   width: 100%;
   display: block;
@@ -280,7 +303,8 @@ a {
 }
 
 .c-media__image {
-    //min-width: 100%;
+    position: relative;
+    z-index: 1;
     min-height: 100%;
   }
 
