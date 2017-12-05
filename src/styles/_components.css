@@ -15,8 +15,8 @@
 
 .c-hamburger {
   width: 24px;
-  height: 24px;
-  margin: 0 auto;
+  height: 19px;
+  cursor: pointer;
 }
 
 .c-heading {
@@ -28,9 +28,16 @@
 }
 
 .c-welcome {
-  font-size: responsive 1rem 1.5rem;
+  font-size: responsive 1.25rem 1.5rem;
   font-range: 720px 1280px;
   font-family: var(--font-primary);
+}
+
+.c-networking {
+  font-size: responsive .75rem .875rem;
+  font-range: 720px 1280px;
+  font-family: var(--font-secondary);
+  line-height: 2;
 }
 
 .c-paragraph {
@@ -42,4 +49,12 @@
 .c-link {
   color: var(--color-brand);
   border-bottom: 1px solid var(--color-brand);
+}
+
+.c-slogan {
+  white-space: nowrap;
+  @media only screen and (min-width: 720px) {
+    margin-bottom: 56px;
+    transform: rotate(-90deg);
+  }
 }
