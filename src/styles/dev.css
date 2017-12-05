@@ -121,15 +121,71 @@ a {
 }
 
 .c-welcome {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: calc(1rem + 0.5 * ((100vw - 45rem) / 35));
+  font-size: calc(1rem + 0.5 * ((100vw - 26.25rem) / 53.75));
   font-family: 'PT Serif', Arial, serif;
 }
 
+@media screen and (min-width: 1280px) {
+
+  .c-welcome {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .c-welcome {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .c-welcome {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+  .c-welcome {
+    font-size: 1rem;
+  }
+}
+
 .c-paragraph {
-  font-size: 14px;
-  font-size: .875rem;
+  font-size: calc(.75rem + 0.125 * ((100vw - 45rem) / 35));
+  font-size: calc(.75rem + 0.125 * ((100vw - 26.25rem) / 53.75));
   font-family: 'Montserrat', Arial, sans-serif;
+}
+
+@media screen and (min-width: 1280px) {
+
+  .c-paragraph {
+    font-size: .875rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .c-paragraph {
+    font-size: .75rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .c-paragraph {
+    font-size: .875rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+  .c-paragraph {
+    font-size: .75rem;
+  }
 }
 
 .c-link {

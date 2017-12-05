@@ -28,12 +28,14 @@
 }
 
 .c-welcome {
-  font-size: 1.5rem;
+  font-size: responsive 1rem 1.5rem;
+  font-range: 720px 1280px;
   font-family: var(--font-primary);
 }
 
 .c-paragraph {
-  font-size: .875rem;
+  font-size: responsive .75rem .875rem;
+  font-range: 720px 1280px;
   font-family: var(--font-secondary);
 }
 

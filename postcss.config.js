@@ -7,9 +7,7 @@ module.exports = () => ({
       }
     },
     'precss': {},
-    'postcss-cssnext': {}
-    // 'cssnano': {
-    //   autoprefixer: false
-    // }
+    'postcss-cssnext': {},
+    'postcss-responsive-type': {}
   }
-});
+})
