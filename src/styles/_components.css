@@ -1,14 +1,13 @@
 /* Components */
 
 .c-hamburger {
-  padding: 8px;
   display: inline-block;
   cursor: pointer;
   transition: filter 0.15s linear;
   overflow: visible;
   &__box {
     width: 24px;
-    height: 24px;
+    height: 20px;
     display: inline-block;
     position: relative;
   }

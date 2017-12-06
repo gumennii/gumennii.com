@@ -2,39 +2,52 @@
 
 .o-page {
   @media only screen and (min-width: 720px) {
-    display: grid;
-    grid-template-columns: 64px auto auto;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    //grid-template-columns: 64px auto auto;
   }
-  height: 100%;
+
 }
 
 .o-bar {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
   background-color: var(--color-bg-primary);
+  line-height: 0;
   transition: all .2s ease-in-out;
+  z-index: 2;
   @media only screen and (min-width: 720px) {
+    position: fixed;
+    left: 0;
+    top: 0;
     flex-direction: column;
     text-align: center;
     padding: 32px 0;
-    min-width: 64px;
-  }
-  &:hover {
-    min-width: 72px;
-    box-shadow: 0 0 25px 0px rgba(46,61,73,0.2);
+    width: 64px;
+    &:hover {
+      width: 72px;
+      box-shadow: 0 0 25px 0px rgba(46,61,73,0.2);
+    }
   }
 }
 
 .o-main {
+  flex: 1;
+  position: relative;
   display: flex;
-  min-width: 320px;
   align-items: center;
+  @media only screen and (min-width: 720px) {
+    padding-left: 64px;
+  }
 }
 
 .o-aside {
   position: relative;
+  max-width: 390px;
   display: flex;
   align-items: stretch;
   margin-top: 32px;
@@ -54,7 +67,7 @@
     left: 0;
     width: 30%;
     height: 30%;
-    background-color: var(--color-brand);
+    background-color: var(--color-bg-primary);
   }
 }
 
@@ -64,9 +77,9 @@
 }
 
 .o-box {
-  margin: 32px;
+  padding: 32px;
   @media only screen and (min-width: 720px) {
-    margin: 10%;
+    padding: 10%;
   }
 }
 
