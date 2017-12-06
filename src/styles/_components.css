@@ -1,22 +1,52 @@
 /* Components */
 
-.c-page-label {
-  position: fixed;
-  left: -18px;
-  bottom: 72px;
-  color: var(--color-brand);
-  font-size: .6875rem;
-  font-family: var(--font-secondary);
-  font-weight: 600;
-  text-transform: uppercase;
-  white-space: nowrap;
-  transform: rotate(-90deg);
-}
-
 .c-hamburger {
-  width: 24px;
-  height: 19px;
+  padding: 8px;
+  display: inline-block;
   cursor: pointer;
+  transition: filter 0.15s linear;
+  overflow: visible;
+  &__box {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+  &__inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+    &,
+    &:before,
+    &:after {
+      width: 24px;
+      height: 3px;
+      background-color: var(--color-brand);
+      border-radius: 4px;
+      position: absolute;
+      transition: transform 0.15s ease;
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+    }
+    &:before { top: -8px; transition: all 0.15s ease-in-out; }
+    &:after { bottom: -8px; transition: all 0.15s ease-in-out; }
+  }
+  &.is-active {
+    .c-hamburger__inner {
+      transform: rotate(-180deg);
+      &:before {
+        top: -5px;
+        transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
+      }
+      &:after {
+        bottom: -5px;
+        transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+      }
+    }
+  }
 }
 
 .c-heading {

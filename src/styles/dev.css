@@ -141,25 +141,74 @@ a {
 
 /* Components */
 
-.c-page-label {
-  position: fixed;
-  left: -18px;
-  bottom: 72px;
-  color: #045afa;
-  font-size: 11px;
-  font-size: .6875rem;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  white-space: nowrap;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.c-hamburger {
+  padding: 8px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 0.15s linear;
+  transition: -webkit-filter 0.15s linear;
+  transition: filter 0.15s linear;
+  transition: filter 0.15s linear, -webkit-filter 0.15s linear;
+  overflow: visible;
 }
 
-.c-hamburger {
+.c-hamburger__box {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+.c-hamburger__inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px
+  }
+
+.c-hamburger__inner, .c-hamburger__inner:before, .c-hamburger__inner:after {
   width: 24px;
-  height: 19px;
-  cursor: pointer;
+  height: 3px;
+  background-color: #045afa;
+  border-radius: 4px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
+}
+
+.c-hamburger__inner:before, .c-hamburger__inner:after {
+  content: "";
+  display: block;
+}
+
+.c-hamburger__inner:before {
+  top: -8px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.c-hamburger__inner:after {
+  bottom: -8px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.c-hamburger.is-active .c-hamburger__inner {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+}
+
+.c-hamburger.is-active .c-hamburger__inner:before {
+  top: -5px;
+  -webkit-transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
+          transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
+}
+
+.c-hamburger.is-active .c-hamburger__inner:after {
+  bottom: -5px;
+  -webkit-transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+          transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 .c-heading {
