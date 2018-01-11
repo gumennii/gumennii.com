@@ -1,88 +1,33 @@
 /* Objects */
 
-.o-page {
-  @media only screen and (min-width: 720px) {
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-    //grid-template-columns: 64px auto auto;
-  }
-
+.o-wrapper {
+  max-width: var(--wrapper-width);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-bg-primary);
 }
 
-.o-bar {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 32px;
-  background-color: var(--color-bg-primary);
-  line-height: 0;
-  transition: all .2s ease-in-out;
-  z-index: 2;
-  @media only screen and (min-width: 720px) {
-    position: fixed;
-    left: 0;
-    top: 0;
-    flex-direction: column;
-    text-align: center;
-    padding: 32px 0;
-    width: 64px;
-    &:hover {
-      width: 72px;
-      box-shadow: 0 0 25px 0px rgba(46,61,73,0.2);
+.o-container {
+  padding: 24px;
+  @media (min-width: 45em) {
+    padding: 32px;
+  }
+  @media (min-width: 64em) {
+    padding: 64px;
+  }
+}
+
+.o-grid {
+  @media (min-width: 45em) {
+    display: flex;
+    &__item {
+      flex: 1;
+      &--spacing {
+        margin-right: 48px;
+      }
+    }
+    &--center {
+      align-items: center;
     }
   }
-}
-
-.o-main {
-  flex: 1;
-  position: relative;
-  display: flex;
-  align-items: center;
-  @media only screen and (min-width: 720px) {
-    padding-left: 64px;
-  }
-}
-
-.o-aside {
-  position: relative;
-  max-width: 390px;
-  display: flex;
-  align-items: stretch;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  padding-left: 8px;
-  padding-bottom: 8px;
-  overflow: hidden;
-  @media only screen and (max-width: 960px) {
-    display: none;
-  }
-  &__media {
-    overflow: hidden;
-  }
-  &__frame {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30%;
-    height: 30%;
-    background-color: var(--color-bg-primary);
-  }
-}
-
-
-.o-intro {
-  padding: 10%;
-}
-
-.o-box {
-  padding: 32px;
-  @media only screen and (min-width: 720px) {
-    padding: 10%;
-  }
-}
-
-.o-content {
-
 }

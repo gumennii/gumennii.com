@@ -1,21 +1,29 @@
 /* Base styles */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
-  height: 100%;
-  line-height: 1.6;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  @media (min-width: 45em) {
+    font-size: 15px;
+  }
+  @media (min-width: 64em) {
+    font-size: 16px;
+  }
 }
 
 body {
-  height: 100%;
   margin: 0;
-  font-size: 16px;
   color: var(--color-text-primary);
   background-color: var(--color-bg-secondary);
+  font-size: 1rem;
   font-family: var(--font-primary);
+  line-height: 1.8;
+  @media (min-width: 45em) {
+    padding: 24px;
+  }
 }
 
 a {

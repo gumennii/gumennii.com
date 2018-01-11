@@ -5,59 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/dev.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|PT+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
   <title>Mihail Gumennii - Senior Front-End Engineer</title>
   <meta name="description" content="Senior Front-End Engineer with deep knowledge of JavaScript and strong background in creatig clean and elegant user interfaces">
 </head>
 <body>
 
-<div class="o-page">
+<div class="o-wrapper">
+  <div class="o-grid o-grid--center">
+    <div class="o-grid__item">
 
-  <div class="o-bar">
-    <div class="o-bar__item">
-      <div class="c-hamburger" id="js-hamburger">
-        <div class="c-hamburger__box">
-          <div class="c-hamburger__inner"></div>
+      <div class="o-container">
+        <article class="c-introduction">
+          <header class="c-introduction__header">
+            <h2 class="c-label">Hello! My name is</h2>
+            <h1 class="c-introduction__heading">Mihail Gumennii<br>I am a Front-End Engineer</h1>
+          </header>
+          <div class="c-introduction__body">
+            With over 7 years of experience and a solid background in creating clean and elegant UI/UX for different industries in <span class="c-silent">Moscow → Prague → </span>San Francisco. I have had the honor to work directly with the great folks from Anki, World Market, Title Nine & many more.
+          </div>
+          <footer class="c-introduction__footer">
+            <p class="c-introduction__addition">
+              Check my full work history on <a class="c-link" href="#">LinkedIn</a>, and code projects on <a class="c-link" href="#">GitHub</a>.<br>
+              If you just want to say hello feel free to <a class="c-link" href="mailto:mihail.gumennii@gmail.com">get in touch</a>.
+            </p>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+    <div class="o-grid__item">
+
+      <picture class="c-portrait">
+        <source srcset="images/portrait-lg.jpg" media="(min-width: 64em)">
+        <source srcset="images/portrait-md.jpg" media="(min-width: 45em)">
+        <img class="c-portrait__image" src="images/portrait-sm.jpg" alt="Photo Mihail Gumennii" />
+      </picture>
+
+    </div>
+  </div>
+</div>
+
+<section class="c-quote">
+  <h3 class="c-quote__text">I'm always up for new challenges, where I can collaborate with people and companies to get their product ideas rolling</h3>
+</section>
+
+<div class="o-wrapper">
+
+  <div class="o-container">
+    <div class="o-grid">
+      <div class="o-grid__item">
+        <h6 class="c-label">Currently</h6>
+        <p class="c-paragraph">
+          Senior Front-End Engineer, <a class="c-link" href="#" target="_blank">Anki</a>
+        </p>
+      </div>
+      <div class="o-grid__item">
+        <p class="c-paragraph">
+          I'm a creative person, I studied design in university and spent most of my time freelancing as a web-designer building clean and elegant user interfaces. I'm also an engineer, and in a short period of time I learned the basics of HTML/CSS/JavaScript and got involved into the world where I could bring my designs to life. I enjoy creating effortless user experience, designing delightful digital products and I'm always hungry to create new things.
+        </p>
+        <p class="c-paragraph">
+          In September 2011, I moved to San Francisco Bay Area and joined the marketing team at World Market. That was the first time in my career that I had work for the company with 1 billion in revenue and the website with audience of millions. I became an engineer who is taking pride in writing elegant, reliable, testable, and maintainable code. I love setting up goals and delivering on them and feel happy when I help and mentor those around me.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-projects">
+    <div class="o-grid o-grid--center o-container c-project">
+      <div class="o-grid__item">
+        <h3 class="c-project__company">
+          Anki <span>/ Robotics and A.I. Company</span>
+        </h3>
+      </div>
+      <div class="o-grid__item">
+        <div class="o-grid o-grid--center">
+          <div class="o-grid__item">
+            <p class="c-paragraph c-paragraph--reset">Senior Front-End Engineer</p>
+          </div>
+          <a class="c-link" href="#" target="_blank">anki.com</a>
         </div>
       </div>
     </div>
-    <div class="o-bar__item">
-      <h2 class="c-heading c-slogan">Mihail Gumennii</h2>
+    <div class="o-grid o-grid--center o-container c-project">
+      <div class="o-grid__item">
+        <h3 class="c-project__company">
+          BTS <span>/ Global Professional Service Firm</span>
+        </h3>
+      </div>
+      <div class="o-grid__item">
+        <div class="o-grid o-grid--center">
+          <div class="o-grid__item">
+            <p class="c-paragraph c-paragraph--reset">Front-End Engineer</p>
+          </div>
+          <a class="c-link" href="#" target="_blank">bts.com</a>
+        </div>
+      </div>
     </div>
-
   </div>
 
-  <main class="o-main">
-    <article class="o-box">
-      <h1 class="c-heading a-heading">Hey, I'm Mihail Gumennii</h1>
-      <p class="c-welcome a-appearence u-mb4">
-        I am a Front-end Engineer with over 7 years of experience and a solid
-        background in creating clean and elegant UI/UX for different industries
-        in <span class="u-silent">Moscow → Prague →</span> San Francisco. I have had the honor to work
-        directly with the great folks from Anki, World Market, Title Nine &amp; many more.
-      </p>
-      <p class="c-networking a-networking">
-        See my work history on
-        <a class="c-link" href="https://www.linkedin.com/in/gumennii/" target="_blank">LinkedIn</a>,
-        coding practices on
-        <a class="c-link" href="https://github.com/gumennii" target="_blank">GitHub</a>.
-        If you would like to discuss more, share feedback or ask any questions, please
-        <a class="c-link" href="mailto: mihail.gumennii@gmail.com">get in touch</a>.
-      </p>
-    </article>
-  </main>
+  <section class="c-quote c-quote--button">
+    <h4 class="c-label">Let's Work Together</h4>
+    <h1 class="c-quote__text">If you'd like to talk about a project you want help with or need an advice just send me an email</h1>
+    <a class="c-btn" href="#">Write an Email</a>
+  </section>
 
-  <aside class="o-aside">
-    <div class="o-aside__media">
-      <picture class="c-media">
-        <source srcset="images/portrait-lg.jpg" media="(min-width: 720px)">
-        <img class="c-media__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Mihail Gumennii">
-      </picture>
+  <div class="o-container">
+    <div class="o-grid">
+      <div class="o-grid__item o-grid__item--spacing">
+        <article class="c-about">
+          <header class="c-about__header">
+            <h4 class="c-label c-label--underline">Work with Passion</h4>
+            <p class="c-paragraph">
+              I worked with numerous clients from all around the world from early startups to well-established companies. I really enjoied working with talented people from Angelloop, Cleanify, Title Nine, Orange Label and others. Feel free to reach out to me if you have a question about user experience or you need help in solving complex technical challenge.
+            </p>
+          </header>
+        </article>
+      </div>
+      <div class="o-grid__item o-grid__item--spacing">
+        <article class="c-about">
+          <header class="c-about__header">
+            <h4 class="c-label c-label--underline">My Early Life</h4>
+            <p class="c-paragraph">
+              School and University years were full of sport and creative activities. I was a member of soccer and track and field teams, studied music and design. Participated and was a multiple times winner in National and European competitions. But my biggest and only competition is myself.
+            </p>
+          </header>
+        </article>
+      </div>
+      <div class="o-grid__item">
+        <article class="c-about">
+          <header class="c-about__header">
+            <h4 class="c-label c-label--underline">Collaboration</h4>
+            <p class="c-paragraph">
+              I believe that my job is more than just writing a clean code, my job is to build bridges between the people who has the idea and people who wants to see this idea live. One of my recent ideas is automatic screenshoting tool for product and marketing teams, I’m designing and building on my free time with awsome people.
+            </p>
+          </header>
+        </article>
+      </div>
     </div>
-    <div class="o-aside__frame"></div>
-  </aside>
+  </div>
 
 </div>
+
+<footer class="o-wrapper c-footer">
+  <div class="o-grid o-grid--center o-container">
+    <div class="o-grid__item">
+      <div class="c-footer__actions">
+        <a class="c-btn" href="#">Download My Resume</a>
+      </div>
+    </div>
+    <div class="o-grid__item">
+      <p class="c-footer__copy">
+        Built with love to semantic <strong>HTML</strong>, clean <strong>CSS</strong> and Pure <strong>JavaScript</strong>
+      </p>
+    </div>
+  </div>
+</footer>
 <script src=js/index.js></script>
 </body>
 </html>

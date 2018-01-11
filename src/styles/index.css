@@ -1,8 +1,12 @@
 /* Imports */
 
-@import "_settings";
-@import "_base";
-@import "_objects";
-@import "_components";
-@import "_utilities";
-@import "_animations";
+@import '_settings';
+@import '_base';
+@import '_objects';
+@import '_components';
+@import '_components.introduction';
+@import '_components.quote';
+@import '_components.buttons';
+@import '_components.projects';
+@import '_utilities';
+@import '_animations';

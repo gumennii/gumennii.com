@@ -2,10 +2,12 @@
 
 :root {
   --color-brand: #045afa;
-  --color-text-primary: #444;
+  --color-text-primary: #333;
   --color-text-secondary: #999;
   --color-bg-primary: #fff;
   --color-bg-secondary: #f9f9f9;
-  --font-primary: 'PT Serif', Arial, serif;
-  --font-secondary: 'Montserrat', Arial, sans-serif;
+  --font-primary: 'Poppins', Arial, sans-serif;
+  --font-secondary: 'PT Serif', Arial, serif;
+
+  --wrapper-width: 1300px;
 }
