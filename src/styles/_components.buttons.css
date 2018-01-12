@@ -7,6 +7,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   height: 3rem;
+  border: 1px solid transparent;
   background-color: var(--color-brand);
   color: #fff;
   border-radius: 1.5rem;
@@ -20,4 +21,8 @@
   user-select: none;
   cursor: pointer;
   white-space: nowrap;
+  transition: background-color ease 0.2s;
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
 }

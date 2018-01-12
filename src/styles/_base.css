@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: var(--color-brand);
+  color: #fff;
+}
+::selection {
+  background: var(--color-brand);
+  color: #fff;
+}
+
 html {
   font-size: 14px;
   @media (min-width: 45em) {

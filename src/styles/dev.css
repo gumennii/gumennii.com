@@ -9,6 +9,16 @@
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: #045afa;
+  color: #fff;
+}
+
+::selection {
+  background: #045afa;
+  color: #fff;
+}
+
 html {
   font-size: 14px;
 }
@@ -93,6 +103,11 @@ a {
       .o-grid__item--spacing {
         margin-right: 48px;
       }
+      .o-grid__item--shrink {
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+      }
 
   .o-grid--center {
       -webkit-box-align: center;
@@ -152,10 +167,35 @@ a {
   }
 
 .c-link {
-  color: #045afa;
-  font-size: inherit;
+  position: relative;
   text-decoration: none;
-  border-bottom: 1px solid #045afa;
+  display: inline-block;
+  color: #333;
+  padding: 0 1px;
+  -webkit-transition: color ease 0.2s;
+  transition: color ease 0.2s;
+  z-index: 1
+}
+
+.c-link:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #045afa;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.c-link:hover {
+  color: white;
+}
+
+.c-link:hover::after {
+  height: 100%;
 }
 
 .c-silent {
@@ -168,6 +208,8 @@ a {
 }
 
 .c-footer {
+  font-size: 9.625px;
+  font-size: 0.6875rem;
   text-align: center;
   border-top: 1px solid #f9f9f9;
 }
@@ -189,8 +231,6 @@ a {
 .c-footer__copy {
     margin: 0;
     padding: 0;
-    font-size: 9.625px;
-    font-size: 0.6875rem;
 }
 
 @media (min-width: 45em) {
@@ -199,11 +239,6 @@ a {
     text-align: right;
   }
 }
-
-.c-icon__svg {
-    width: 20px;
-    height: 20px;
-  }
 
 /* Components: Introduction */
 
@@ -261,6 +296,7 @@ a {
   margin: 3rem auto;
   padding: 14px;
   padding: 1rem;
+  max-width: 650px;
 }
 
 @media (min-width: 45em) {
@@ -329,6 +365,7 @@ a {
   padding-right: 1.5rem;
   height: 42px;
   height: 3rem;
+  border: 1px solid transparent;
   background-color: #045afa;
   color: #fff;
   border-radius: 1.5rem;
@@ -346,13 +383,23 @@ a {
           user-select: none;
   cursor: pointer;
   white-space: nowrap;
+  -webkit-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s
+}
+
+.c-btn:hover {
+  background-color: #004ede;
 }
 
 /* Components: Projects */
 
-.c-project {
-  border-top: 1px solid #f9f9f9;
-  border-bottom: 1px solid #f9f9f9;
+@media (min-width: 45em) {
+
+  .c-project {
+    max-height: 120px;
+    border-top: 1px solid #f9f9f9;
+    border-bottom: 1px solid #f9f9f9;
+  }
 }
 
 .c-project__company {
@@ -362,13 +409,119 @@ a {
     font-size: 1.75rem;
     font-family: 'PT Serif', Arial, serif;
     font-weight: 400;
-    line-height: 1.4
-  }
+    line-height: 1.4;
+}
 
 .c-project__company span {
+  display: block;
   font-size: 10.5px;
   font-size: 0.75rem;
   color: #999;
+}
+
+@media (max-width: 45em) {
+
+  .c-project__company span {
+    margin-bottom: 8px;
+  }
+}
+
+.c-project__link {
+    position: relative;
+    font-size: 12.25px;
+    font-size: 0.875rem;
+}
+
+.c-project__link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 45em) {
+
+  .c-project:hover, .c-project:hover span {
+    color: #fff;
+  }
+}
+
+@media (max-width: 45em) {
+
+  .c-project--anki {
+    color: #fff;
+    background: url('../images/projects/anki-sm.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 45em) {
+
+  .c-project--anki:hover {
+    background: url('../images/projects/anki-md.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 64em) {
+
+  .c-project--anki:hover {
+    background: url('../images/projects/anki-lg.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 45em) {
+
+  .c-project--bts {
+    color: #fff;
+    background: url('../images/projects/bts-sm.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 45em) {
+
+  .c-project--bts:hover {
+    background: url('../images/projects/bts-md.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 64em) {
+
+  .c-project--bts:hover {
+    background: url('../images/projects/bts-lg.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 45em) {
+
+  .c-project--worldmarket {
+    color: #fff;
+    background: url('../images/projects/worldmarket-sm.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 45em) {
+
+  .c-project--worldmarket:hover {
+    background: url('../images/projects/worldmarket-md.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 64em) {
+
+  .c-project--worldmarket:hover {
+    background: url('../images/projects/worldmarket-lg.jpg') center center no-repeat;
+    background-size: cover;
+  }
 }
 
 /* Utilities and Helpers */

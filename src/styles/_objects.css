@@ -25,6 +25,9 @@
       &--spacing {
         margin-right: 48px;
       }
+      &--shrink {
+        flex-grow: 0;
+      }
     }
     &--center {
       align-items: center;
