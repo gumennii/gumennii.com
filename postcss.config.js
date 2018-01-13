@@ -1,13 +1,16 @@
 module.exports = () => ({
   plugins: {
-    'stylelint': {
-      "extends": "stylelint-config-standard",
-      "rules": {
-        "max-empty-lines": 2
+    stylelint: {
+      extends: 'stylelint-config-standard',
+      rules: {
+        'max-empty-lines': 2
       }
     },
-    'precss': {},
+    precss: {},
     'postcss-cssnext': {},
-    'postcss-responsive-type': {}
+    'postcss-responsive-type': {},
+    cssnano: {
+      preset: ['advanced']
+    }
   }
-})
+});
