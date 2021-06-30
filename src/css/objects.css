@@ -1,0 +1,39 @@
+/* Objects */
+
+.o-wrapper {
+  max-width: var(--wrapper-width);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-bg-primary);
+}
+
+.o-container {
+  padding: 24px;
+}
+
+@media (min-width: 45em) {
+  .o-container {
+    padding: 32px;
+  }
+  .o-grid {
+    display: flex;
+  }
+  .o-grid__item {
+    flex: 1;
+  }
+  .o-grid--center {
+    align-items: center;
+  }
+  .o-grid__item--spacing {
+    margin-right: 48px;
+  }
+  .o-grid__item--shrink {
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .o-container {
+    padding: 64px;
+  }
+}

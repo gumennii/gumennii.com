@@ -1,0 +1,8 @@
+require('../css/settings.css')
+require('../css/base.css')
+require('../css/objects.css')
+require('../css/components.css')
+require('../css/components.buttons.css')
+require('../css/components.introduction.css')
+require('../css/components.quote.css')
+require('../css/components.projects.css')

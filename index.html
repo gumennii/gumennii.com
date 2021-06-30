@@ -16,42 +16,11 @@
 <body>
 
 <main class="o-wrapper">
-  <div class="o-grid o-grid--center">
-    <div class="o-grid__item">
-
-      <div class="o-container">
-        <article class="c-introduction">
-          <header class="c-introduction__header">
-            <h2 class="c-label">Hello! My name is</h2>
-            <h1 class="c-introduction__heading">Mihail Gumennii<br>I am a Senior Front-End Engineer…</h1>
-          </header>
-          <div class="c-introduction__body">
-            … with 8+ years of experience in software engineering and a strong interest in building UIs with modern tools including ES6, Typescript, React, Redux, and Webpack. I am passionate about building world-class user interfaces combining usability, accessibility, elegance, performance, code quality, and maintainability.
-          </div>
-          <footer class="c-introduction__footer">
-            <p class="c-introduction__addition">
-              Check out my full work history on <a class="c-link" href="https://www.linkedin.com/in/gumennii/" target="_blank" rel="noopener">LinkedIn</a>.<br>
-              Or feel free to <a class="c-link" href="mailto:mihail.gumennii@gmail.com">send me an email</a>.
-            </p>
-          </footer>
-        </article>
-
-      </div>
-    </div>
-    <div class="o-grid__item">
-
-      <picture class="c-portrait">
-        <source srcset="assets/images/portrait-lg.jpg" media="(min-width: 64em)">
-        <source srcset="assets/images/portrait-md.jpg" media="(min-width: 45em)">
-        <img class="c-portrait__image" src="assets/images/portrait-sm.jpg" alt="Photo Mihail Gumennii" />
-      </picture>
-
-    </div>
-  </div>
+  <%= require('html-loader!../partials/hero.html') %>
 </main>
 
 <section class="c-quote">
-  <h3 class="c-quote__text">I'm always up for new challenges where I can collaborate with people and companies to bring their ideas to life</h3>
+  <h1 class="c-quote__text">I'm always up for new challenges where I can collaborate with people and companies to bring their ideas to life</h1>
 </section>
 
 <div class="o-wrapper">
@@ -59,21 +28,21 @@
   <div class="o-container">
     <div class="o-grid">
       <div class="o-grid__item">
-        <h6 class="c-label">Currently</h6>
+        <h1 class="c-label">Currently</h1>
         <p class="c-paragraph">
           Senior Front-End Engineer, <a class="c-link" href="https://hiremya.com/" target="_blank" rel="noopener">Mya Systems, Inc.</a>
         </p>
       </div>
       <div class="o-grid__item">
         <p class="c-paragraph">
-          As an undergraduate, I studied design where I developed my skills in creativity and attention to detail. 
-          However, technology was, and still is, my biggest passion. The role of a front-end engineer allows me to be a part of both worlds. 
+          As an undergraduate, I studied design where I developed my skills in creativity and attention to detail.
+          However, technology was, and still is, my biggest passion. The role of a front-end engineer allows me to be a part of both worlds.
           I enjoy creating an effortless user experience and am always striving to find the best solution for user-facing problems.
         </p>
         <p class="c-paragraph">
-          Today I live and work in San Francisco. My journey here started at Cost Plus World Market back in 2011. 
-          I joined the marketing team as a UI developer to work on a website visited by millions of users on a daily basis. 
-          It was my first experience as an engineer with a huge set of responsibilities. 
+          Today I live and work in San Francisco. My journey here started at Cost Plus World Market back in 2011.
+          I joined the marketing team as a UI developer to work on a website visited by millions of users on a daily basis.
+          It was my first experience as an engineer with a huge set of responsibilities.
           I’ve learned a lot since then, grew as an engineer, and have become an active team member with enthusiasm for solving technical problems.
         </p>
       </div>
@@ -141,9 +110,9 @@
           <header class="c-about__header">
             <h4 class="c-label c-label--underline">Experience and challenges</h4>
             <p class="c-paragraph">
-              I have had the chance to be a contributing member of early-stage startups and well-established companies in the USA, Russia, the Czech Republic, and the Republic of Moldova. 
-              I enjoyed working with the great teams from Anki, World Market, Title Nine, Lucky Brand Jeans, UC Boulder, and many others. 
-              Each project that I’ve faced was unique and had its own challenges. 
+              I have had the chance to be a contributing member of early-stage startups and well-established companies in the USA, Russia, the Czech Republic, and the Republic of Moldova.
+              I enjoyed working with the great teams from Anki, World Market, Title Nine, Lucky Brand Jeans, UC Boulder, and many others.
+              Each project that I’ve faced was unique and had its own challenges.
               I believe that my job is to continuously think through requirements and develop impactful ways of efficiently solving problems.
             </p>
           </header>
@@ -154,10 +123,10 @@
           <header class="c-about__header">
             <h4 class="c-label c-label--underline">Technical skills</h4>
             <p class="c-paragraph">
-              I build, test, and ship user-facing features/products using modern tools such as 
-              Javascript/Typescript, React/Redux, GraphQL, Node.js, Python, HTML/CSS, PostCSS, Styled Components, Jest, Webpack, Git… 
-              I enjoy sharing my knowledge and experiences with clients, developers who need help in their software engineering journey, 
-              and anyone who is interested in learning more about technology. In addition to my engineering and leadership experience, 
+              I build, test, and ship user-facing features/products using modern tools such as
+              Javascript/Typescript, React/Redux, GraphQL, Node.js, Python, HTML/CSS, PostCSS, Styled Components, Jest, Webpack, Git…
+              I enjoy sharing my knowledge and experiences with clients, developers who need help in their software engineering journey,
+              and anyone who is interested in learning more about technology. In addition to my engineering and leadership experience,
               I am passionate about all aspects of design, code quality, and attention to detail.
             </p>
           </header>
@@ -168,10 +137,10 @@
           <header class="c-about__header">
             <h4 class="c-label c-label--underline">Competition</h4>
             <p class="c-paragraph">
-              My time in college was full of sports and creative activities. 
-              I was a member of the soccer, track and field teams, as well as studying music during my free time as a hobby. 
-              I participated in and won multiple National and European sports competitions. However, 
-              the most challenging competition that I’ve faced, and continue to face, is myself. I’m grateful that I have had the drive to repeatedly push my limits, 
+              My time in college was full of sports and creative activities.
+              I was a member of the soccer, track and field teams, as well as studying music during my free time as a hobby.
+              I participated in and won multiple National and European sports competitions. However,
+              the most challenging competition that I’ve faced, and continue to face, is myself. I’m grateful that I have had the drive to repeatedly push my limits,
               independently learn new technologies, and seek to grow as an engineer.
             </p>
           </header>
