@@ -10,3 +10,6 @@ node_modules/
 
 # Build
 build/
+
+# Mish
+.DS_Store

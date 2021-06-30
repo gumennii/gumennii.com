@@ -1,0 +1,32 @@
+/* Components: Introduction */
+
+.c-introduction__header {
+    margin-bottom: 1.5rem;
+}
+
+.c-introduction__addition {
+  font-size: 0.75rem;
+}
+.c-introduction__body {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: var(--font-secondary);
+}
+
+.c-introduction__heading {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (min-width: 65em) {
+  .c-introduction__body {
+    margin-bottom: 4rem;
+  }
+  .c-introduction__heading {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,14 @@
+/* Settings */
+
+:root {
+  --color-brand: #045afa;
+  --color-brand-hover: #004ede;
+  --color-text-primary: #333;
+  --color-text-secondary: #666;
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #f9f9f9;
+  --font-primary: 'Poppins', Arial, sans-serif;
+  --font-secondary: 'PT Serif', Arial, serif;
+
+  --wrapper-width: 1300px;
+}
