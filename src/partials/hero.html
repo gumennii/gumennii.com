@@ -32,10 +32,15 @@
   </div>
   <div class="o-grid__item">
     <picture class="c-portrait">
+      <source media="(min-width: 64em)" type="image/webp" srcset="../img/portrait/portrait-lg.webp 1x, ../img/portrait/portrait-lg@2x.webp 2x">
+      <source media="(min-width: 45em)" type="image/webp" srcset="../img/portrait/portrait-md.webp 1x, ../img/portrait/portrait-md@2x.webp 2x">
+      <source media="(max-width: 45em)" type="image/webp" srcset="../img/portrait/portrait-sm.webp 1x, ../img/portrait/portrait-sm@2x.webp 2x">
+      <!-- Fallback for browsers that don't support WebP format -->
       <source media="(min-width: 64em)" srcset="../img/portrait/portrait-lg.jpg 1x, ../img/portrait/portrait-lg@2x.jpg 2x">
       <source media="(min-width: 45em)" srcset="../img/portrait/portrait-md.jpg 1x, ../img/portrait/portrait-md@2x.jpg 2x">
       <source media="(max-width: 45em)" srcset="../img/portrait/portrait-sm.jpg 1x, ../img/portrait/portrait-sm@2x.jpg 2x">
-      <img class="c-portrait__image" src="../img/portrait/portrait-sm.jpg" width="100%" height="100%" alt="Mihail Gumennii">
+      <!-- Final fallback image -->
+      <img class="c-portrait__image" alt="Mihail Gumennii" width="100%" height="100%" src="../img/portrait/portrait-md.jpg">
     </picture>
   </div>
 </section>
