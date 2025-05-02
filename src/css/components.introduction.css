@@ -5,7 +5,8 @@
 }
 
 .c-introduction__addition {
-  font-size: 0.75rem;
+  font-size: 0.825rem;
+  line-height: 1.6;
 }
 .c-introduction__body {
   margin-bottom: 2rem;
