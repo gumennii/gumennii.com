@@ -47,7 +47,8 @@
   text-decoration: none;
   display: inline-block;
   color: #333;
-  padding: 0 1px;
+  padding: 4px 4px 8px 4px;  /* Increased padding to improve touch target size */
+  margin-left: -4px;  /* Negative margin to offset padding and maintain visual layout */
   transition: color ease 0.2s;
   z-index: 1;
 }
@@ -56,12 +57,13 @@
   content: '';
   position: absolute;
   z-index: -1;
-  width: 100%;
   height: 2px;
-  left: 0;
-  bottom: 0;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
   background-color: var(--color-brand);
   transition: all ease 0.2s;
+  border-radius: 2px;
 }
 
 .c-link:hover {
@@ -70,6 +72,7 @@
 
 .c-link:hover::after {
   height: 100%;
+  margin: -2px -3px;
 }
 
 .c-silent {
@@ -81,7 +84,7 @@
 }
 
 .c-footer {
-  font-size: 0.6875rem;
+  font-size: 0.825rem;
   text-align: center;
   border-top: 1px solid var(--color-bg-secondary);
 }

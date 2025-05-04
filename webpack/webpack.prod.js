@@ -3,9 +3,10 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin")
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const BUILD_PATH = path.resolve(__dirname, '../build')
 
@@ -44,11 +45,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|webp)$/i,
         type: "asset",
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|webp)$/i,
         use: [
           {
             loader: ImageMinimizerPlugin.loader,
@@ -76,6 +77,14 @@ module.exports = {
       filename: '[name].[contenthash].css',
       chunkFilename: '[id].[contenthash].css'
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './src/img/favicon/favicon-16x16.png', to: 'favicon-16x16.png' },
+        { from: './src/img/favicon/favicon-32x32.png', to: 'favicon-32x32.png' },
+        { from: './src/img/favicon/apple-touch-icon.png', to: 'apple-touch-icon.png' },
+        { from: './src/img/favicon/site.webmanifest', to: 'site.webmanifest' }
+      ]
+    }),
   ],
 
   // https://webpack.js.org/configuration/optimization/
@@ -83,7 +92,7 @@ module.exports = {
     minimize: true,
     minimizer: [
       new TerserPlugin(),
-      new OptimizeCssAssetsPlugin({})
+      new CssMinimizerPlugin()
     ]
   }
 }
