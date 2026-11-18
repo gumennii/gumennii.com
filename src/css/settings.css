@@ -7,8 +7,49 @@
   --color-text-secondary: #666;
   --color-bg-primary: #fff;
   --color-bg-secondary: #f9f9f9;
-  --font-primary: 'Poppins', Arial, sans-serif;
-  --font-secondary: 'PT Serif', Arial, serif;
+  --font-primary: 'Poppins', 'Poppins Fallback', Arial, sans-serif;
+  --font-secondary: 'PT Serif', 'PT Serif Fallback', 'Times New Roman', serif;
 
   --wrapper-width: 1300px;
+}
+
+/* Fallback faces sized to match the web fonts, so text does not move when they load. */
+@font-face {
+  font-family: 'Poppins Fallback';
+  font-weight: 400;
+  src: local('Arial');
+  size-adjust: 114.1%;
+  ascent-override: 92.02%;
+  descent-override: 30.67%;
+  line-gap-override: 8.76%;
+}
+
+@font-face {
+  font-family: 'Poppins Fallback';
+  font-weight: 700;
+  src: local('Arial Bold'), local('Arial');
+  size-adjust: 108.07%;
+  ascent-override: 97.16%;
+  descent-override: 32.39%;
+  line-gap-override: 9.25%;
+}
+
+@font-face {
+  font-family: 'PT Serif Fallback';
+  font-weight: 400;
+  src: local('Times New Roman');
+  size-adjust: 111.29%;
+  ascent-override: 93.36%;
+  descent-override: 25.7%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'PT Serif Fallback';
+  font-weight: 700;
+  src: local('Times New Roman Bold'), local('Times New Roman');
+  size-adjust: 113.09%;
+  ascent-override: 91.87%;
+  descent-override: 25.29%;
+  line-gap-override: 0%;
 }
