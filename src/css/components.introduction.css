@@ -31,3 +31,11 @@
     font-size: 1.75rem;
   }
 }
+
+.c-introduction__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.875rem;
+}

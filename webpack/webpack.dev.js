@@ -12,6 +12,7 @@ module.exports = {
 
   devServer: {
     port: 8080,
+    static: { directory: require('path').resolve(__dirname, '../assets/files'), publicPath: '/assets/files' },
     devMiddleware: {
       writeToDisk: false
     }
@@ -19,6 +20,7 @@ module.exports = {
 
   module: {
     rules: [
+      { test: /\.(jpe?g|png|webp)$/i, type: 'asset/resource' },
       {
         test: /\.js$/i,
         exclude: /node_modules/,
