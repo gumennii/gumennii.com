@@ -7,6 +7,7 @@
 
 .c-project__content {
   position: absolute;
+  z-index: 1;
   left: 0;
   top: 0;
   bottom: 0;
@@ -91,5 +92,6 @@
 
 /* These new project photos come without the dark treatment on the original banners. */
 .c-projects__image--dimmed {
+  background-color: #333;
   filter: brightness(0.35);
 }
