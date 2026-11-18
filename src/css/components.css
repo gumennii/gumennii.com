@@ -95,6 +95,10 @@
   padding: 0;
 }
 
+.c-footer__link {
+  margin-right: 8px;
+}
+
 @media (min-width: 45em) {
   .c-footer {
     text-align: left;
