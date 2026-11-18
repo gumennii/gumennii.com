@@ -79,6 +79,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
+        { from: './assets/files/Mihail_Gumennii_Resume.pdf', to: 'assets/files/Mihail_Gumennii_Resume.pdf' },
         { from: './src/img/favicon/favicon-16x16.png', to: 'favicon-16x16.png' },
         { from: './src/img/favicon/favicon-32x32.png', to: 'favicon-32x32.png' },
         { from: './src/img/favicon/apple-touch-icon.png', to: 'apple-touch-icon.png' },
