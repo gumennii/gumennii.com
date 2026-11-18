@@ -10,10 +10,15 @@
 }
 
 .c-quote__text {
+  margin: 0.67em 0;
   font-size: 1.75rem;
   font-family: var(--font-secondary);
   font-weight: 700;
   line-height: 1.4;
+}
+
+.c-quote--button .c-quote__text {
+  margin: 0.83em 0;
 }
 
 .c-quote:before,

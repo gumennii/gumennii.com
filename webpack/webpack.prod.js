@@ -69,7 +69,7 @@ module.exports = {
     new CleanWebpackPlugin(), // cleans output.path by default
     new HtmlWebpackPlugin({
       template: './src/page/index.html',
-      inject: true,
+      inject: false,
       filename: 'index.html',
       favicon: './src/img/favicon.ico'
     }),
@@ -84,6 +84,9 @@ module.exports = {
         { from: './src/img/favicon/favicon-32x32.png', to: 'favicon-32x32.png' },
         { from: './src/img/favicon/apple-touch-icon.png', to: 'apple-touch-icon.png' },
         { from: './src/img/favicon/site.webmanifest', to: 'site.webmanifest' },
+        { from: './src/img/favicon/android-chrome-192x192.png', to: 'android-chrome-192x192.png' },
+        { from: './src/img/favicon/android-chrome-512x512.png', to: 'android-chrome-512x512.png' },
+        { from: './src/img/portrait/portrait-sm@2x.jpg', to: 'og-image-v1.jpg' },
         { from: './src/netlify/_headers', to: '_headers', toType: 'file' }
       ]
     }),
