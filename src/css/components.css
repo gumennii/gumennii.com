@@ -30,6 +30,7 @@
 .c-portrait__image {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .c-paragraph {
@@ -108,4 +109,3 @@
     margin-bottom: 2rem;
   }
 }
-

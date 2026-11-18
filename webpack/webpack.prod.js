@@ -22,7 +22,7 @@ module.exports = {
   // how to write the compiled files to disk
   // https://webpack.js.org/concepts/output/
   output: {
-    filename: '[name].js',
+    filename: '[name].[contenthash].js',
     publicPath: './',
     path: BUILD_PATH
   },
@@ -83,7 +83,8 @@ module.exports = {
         { from: './src/img/favicon/favicon-16x16.png', to: 'favicon-16x16.png' },
         { from: './src/img/favicon/favicon-32x32.png', to: 'favicon-32x32.png' },
         { from: './src/img/favicon/apple-touch-icon.png', to: 'apple-touch-icon.png' },
-        { from: './src/img/favicon/site.webmanifest', to: 'site.webmanifest' }
+        { from: './src/img/favicon/site.webmanifest', to: 'site.webmanifest' },
+        { from: './src/netlify/_headers', to: '_headers', toType: 'file' }
       ]
     }),
   ],
